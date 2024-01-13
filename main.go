@@ -15,6 +15,7 @@ func main() {
 	utils.CreateJSONFile()
 	utils.CreateYAMLFile()
 
+	// создаем структуру JSONData в переменную jsonData
 	jsonData := encoding.JSONData{FileInput: "jsonInput.json", FileOutput: "yamlOutput.yml"}
 	err := Encode(&jsonData)
 	if err != nil {
